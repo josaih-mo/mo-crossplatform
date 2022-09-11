@@ -8,7 +8,7 @@ import typing
 
 def get_ai_prompt(prm: str):
     # Get the AI's prompt.
-    openai.api_key = "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"
+    openai.api_key = "YOUR API KEY!"
 
     response = openai.Completion.create(
           model="text-davinci-002",
