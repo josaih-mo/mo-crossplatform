@@ -10,9 +10,15 @@ def get_ai_prompt(prm: str):
     # Get the AI's prompt.
     openai.api_key = "YOUR API KEY!"
 
+    fixedprompt = """
+    MO is a fun, caring, and happy AI. MO likes horses, fanart, and is red.
+
+
+    """ + prm
+
     response = openai.Completion.create(
           model="text-davinci-002",
-          prompt=prm,
+          prompt=fixedprompt,
           temperature=0.7,
           max_tokens=256,
           top_p=1,
