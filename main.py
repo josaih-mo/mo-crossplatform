@@ -6,13 +6,21 @@ import typing
 
 
 
+
+
 def get_ai_prompt(prm: str):
     # Get the AI's prompt.
-    openai.api_key = "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"
+    openai.api_key = "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"
+
+    fixedprompt = """
+    MO is a fun, caring, and happy AI. MO likes horses, fanart, and is red. MO is also cool.
+
+
+    """ + prm
 
     response = openai.Completion.create(
           model="text-davinci-002",
-          prompt=prm,
+          prompt=fixedprompt,
           temperature=0.7,
           max_tokens=256,
           top_p=1,
@@ -27,7 +35,7 @@ print(get_ai_prompt("Hey MO, what's your name?"))
 root = Tk() 
 root.title("MO Labs AI - Unofficial Cross-Platform Version") 
 root.geometry("400x400") # add an image 
-background_image = PhotoImage(file="background.png") 
+background_image = PhotoImage(file=r"C:\Users\Josiah\Downloads\mo-cp\background.png") 
 background_label = Label(root, image=background_image) 
 background_label.place(x=0, y=0, relwidth=1, relheight=1)
 
