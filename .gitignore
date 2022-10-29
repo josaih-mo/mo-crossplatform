@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 .\output
 .env
 .replit
 .breakpoints
+=======
+./output
+*replit*
+>>>>>>> fc6d4494c6953e39177d8f289422a5c00cd5c18c

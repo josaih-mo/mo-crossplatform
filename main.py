@@ -10,10 +10,17 @@ import typing
 
 def get_ai_prompt(prm: str):
     # Get the AI's prompt.
+<<<<<<< HEAD
     openai.api_key = "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"
 
     fixedprompt = """
     MO is a fun, caring, and happy AI. MO likes horses, fanart, and is red. MO is also cool.
+=======
+    openai.api_key = "YOUR API KEY!"
+
+    fixedprompt = """
+    MO is a fun, caring, and happy AI. MO likes horses, fanart, and is red.
+>>>>>>> fc6d4494c6953e39177d8f289422a5c00cd5c18c
 
 
     """ + prm
